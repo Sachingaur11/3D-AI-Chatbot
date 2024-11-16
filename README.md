@@ -1,3 +1,4 @@
+![Screenshot 2024-11-16 at 6 41 51 AM](https://github.com/user-attachments/assets/a6016caa-030a-47cf-baa6-4433808b761b)
 # 3D-chatbot
 
 ## Project Overview
