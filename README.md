@@ -22,7 +22,7 @@ The `Avatar` component is a key part of the 3D chatbot application, responsible 
   
 - **Animations**: The component supports various animations, which can be controlled dynamically based on user input or chat messages. The animation speed can be adjusted using a control panel.
 
-- **Lip Syncing**: The avatar's mouth movements are synchronized with audio playback to simulate realistic speech.
+- **Lip Syncing**: The avatar's mouth movements are synchronized with audio playback to simulate realistic speech. This is achieved using the Rhubarb Lip Sync library, which generates lip sync data based on audio input. The Oculus Visemes are used to map the lip sync data to the avatar's mouth movements.
 
 - **Interactive Controls**: Users can interact with the avatar using a control panel powered by `leva`, allowing them to trigger expressions, animations, and other features.
 
@@ -35,13 +35,15 @@ The `Avatar` component is located in `Frontend/src/components/Avatar.jsx`. It is
 - **@react-three/drei**: Provides useful helpers for working with Three.js in React.
 - **@react-three/fiber**: A React renderer for Three.js, enabling the use of Three.js within React components.
 - **leva**: A GUI library for React, used to create control panels for adjusting the avatar's properties.
+- **Rhubarb Lip Sync**: A tool for generating lip sync data from audio files.
+- **FFmpeg**: Used for converting audio files from MP3 to WAV format, which is necessary for lip sync generation.
 
 ### How It Works
 
 1. **Model Loading**: The avatar model is downloaded from the Ready Player Me website as a .glb file. Animations are created using Mixamo without skin and merged together into one .glb file. The component loads these 3D models and animations using the `useGLTF` hook.
 2. **Animation Control**: Animations are managed using the `useAnimations` hook, allowing for smooth transitions and speed adjustments.
 3. **Facial Expression Mapping**: Facial expressions are mapped to morph targets on the 3D model, which are adjusted in real-time based on user input or chat messages.
-4. **Audio Playback**: Audio is played using the HTML5 Audio API, with events to handle playback completion and errors.
+4. **Audio Playback and Lip Sync**: Audio is played using the HTML5 Audio API, with events to handle playback completion and errors. The Rhubarb Lip Sync library processes audio files to generate lip sync data, which is then applied to the avatar using Oculus Visemes. FFmpeg is used to convert audio files to the required format for processing.
 
 ### Customization
 
