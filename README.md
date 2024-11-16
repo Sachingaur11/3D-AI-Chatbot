@@ -48,5 +48,8 @@ Developers can customize the avatar by modifying the facial expressions, animati
 
 The component preloads necessary 3D models and animations to ensure smooth performance and quick loading times.
 
+## Backend
+The backend of the application is located in the `backend` folder. The main file is `index.js`, which plays a crucial role in handling server-side logic and communication with the frontend.
+
 ## Running the Application
-To run the application, navigate to both the frontend and backend folders and run `npm run dev` in each folder.
+To run the application, navigate to both the `Frontend` and `backend` folders and run `npm run dev` in each folder.
