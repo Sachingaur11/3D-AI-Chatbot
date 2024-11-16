@@ -15,10 +15,10 @@ import ffmpegPath from "ffmpeg-static";
 // const path = require('path');
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || "sk-gen-ai-roEigZRkddmJb3IVO8zMT3BlbkFJGM6ythHXbuuEyRHW6wTw",
+  apiKey: process.env.OPENAI_API_KEY || "Your_OpenAI_API_Key",
 });
 
-const elevenLabsApiKey = "sk_eecdffdebd510466e4b3e339d406f4597ecf1a6da8e68686";
+const elevenLabsApiKey = "ElevenLabs_API_Key";
 const voiceID = "FGY2WhTYpPnrIDTdsKH5";
 
 const app = express();
