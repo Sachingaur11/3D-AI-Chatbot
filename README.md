@@ -1,8 +1,10 @@
-![Screenshot 2024-11-16 at 6 41 51 AM](https://github.com/user-attachments/assets/a6016caa-030a-47cf-baa6-4433808b761b)
+
 # 3D-chatbot
 
 ## Project Overview
 This project is a 3D chatbot application that uses React for the frontend and Node.js for the backend. The chatbot features a virtual avatar that can display various facial expressions and animations based on the user's input.
+
+![Screenshot 2024-11-16 at 6 41 51 AM](https://github.com/user-attachments/assets/a6016caa-030a-47cf-baa6-4433808b761b)
 
 ## Frontend
 The frontend of the application is located in the `Frontend` folder. 
